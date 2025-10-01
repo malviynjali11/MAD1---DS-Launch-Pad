@@ -61,4 +61,25 @@ SQL-Alchemy -
                               db.session.add()
                               db.session.commit()
 
+# LET's START
+
+1) Creating Virtual Environment
+
+HTTP Methods - 
+-> GET - when we are seeking some resource from the server (getting the resources)
+-> POST - when I want to send a resource to the server (make a post to the server)
+-> PUT - to update a rsource 
+-> DELETE - to delete the resource
+
+GET/POST/PUT/DELETE ------ Server ------- Status code and response
+
+200 - OK/Success
+201 - Resource 
+e.g. you are signing (email and pwd) up for Spotify --> save in the database 
+404 - Not Found 
+
+render_template - is a function using which we can render html templates to the server basically I can send html pages to the users from the server .
+
+templates folder - in order to give html pages as a response all the pages should be in the templates folder
+
 
