@@ -82,4 +82,11 @@ render_template - is a function using which we can render html templates to the 
 
 templates folder - in order to give html pages as a response all the pages should be in the templates folder
 
+Models 
+DataBase
+sql-alchemy 
+pythonic way helps us talk to the DB 
+
+ORM - Object Relational Making
+
 

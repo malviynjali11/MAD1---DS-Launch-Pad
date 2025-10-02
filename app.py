@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -15,7 +15,13 @@ def login():
         last_name = request.form.get('lname')
         print(first_name)
         print(last_name)
-        return render_template('dashboard.html', first_name=first_name, last_name=last_name)
+        return redirect('/dashboard/'+first_name)
+    
+@app.route('/dashboard/<firstname>', methods=['GET', 'POST'])
+def dashboard(firstname):
+    if request.method == 'GET':
+        return render_template('dashboard.html', first_name=firstname)
+    
 # methods are the list of methods only allowed methods to the server
 
 
